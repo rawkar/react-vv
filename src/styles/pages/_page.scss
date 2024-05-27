@@ -121,14 +121,6 @@
       }
     }
 
-    .antal-foljare,
-    .nya-foljare,
-    .okning-foljare {
-      .submain__box-text {
-        // padding-top: 1.4rem;
-      }
-    }
-
     .geo {
       .submain__box-text {
         padding-top: 1.4rem !important;
@@ -218,7 +210,7 @@
 
   .trendUp {
     content: "";
-    display: inline-block;
+
     width: 46px;
     height: 46px;
     margin-left: 0.5rem !important;
@@ -511,7 +503,7 @@
 
     position: absolute;
 
-    top: 50px;
+    top: 60px;
     right: 30px;
   }
 
@@ -519,7 +511,13 @@
     .map {
       width: 120px;
       height: 120px;
-      top: 60px;
+      top: 70px;
+    }
+  }
+
+  @include responsive.max(900px) {
+    .map {
+      top: 80px;
     }
   }
 
@@ -541,6 +539,37 @@
 }
 
 .klick-inlagg {
+  position: relative;
+  .trendUp {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    margin-left: 0.5rem !important;
+    margin-top: 0.5rem;
+
+    @include responsive.max(1100px) {
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      margin-left: 0.5rem !important;
+      margin-top: 0.5rem;
+    }
+    @include responsive.max(900px) {
+      width: 30px;
+      height: 30px;
+      position: absolute;
+      margin-left: 0.5rem !important;
+      margin-top: 0.5rem;
+    }
+
+    @include responsive.max(500px) {
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      margin-left: 0.5rem !important;
+      margin-top: 0.5rem;
+    }
+  }
   .submain__box-text {
     padding-top: 2.5rem !important;
   }

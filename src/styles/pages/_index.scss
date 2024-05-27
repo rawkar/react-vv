@@ -101,15 +101,11 @@
     .sammanfattning-enheter,
     .sammanfattning-geo {
       grid-column: span 8;
-
-      // .main__box-text {
-      //   padding-top: 0.2rem;
-      // }
     }
 
     .sammanfattning-enheter {
       .main__box-text {
-        padding-top: 3rem;
+        padding-top: 3.7rem;
 
         @include responsive.max(1400px) {
           padding-top: 4rem;
@@ -126,7 +122,7 @@
 
     .sammanfattning-geo {
       .main__box-text {
-        padding-top: 0.1rem;
+        padding-top: 0.3rem;
       }
     }
 
@@ -154,6 +150,8 @@
           padding: 0 !important;
           margin: 1rem 0 2rem !important;
         }
+      }
+      @include responsive.max(500px) {
       }
     }
   }
@@ -246,6 +244,8 @@
   }
 }
 
+//Dator
+
 .sammanfattning-dator {
   position: relative;
   margin-left: 4.5rem;
@@ -319,11 +319,22 @@
     }
   }
 
-  @include responsive.max(680px) {
+  @include responsive.max(900px) {
+    h2 {
+      font-size: var(--font-size-3) !important;
+    }
+
     .trendDown {
-      margin-left: 8.4rem;
-      width: 20px;
-      height: 20px;
+      margin-left: 12rem;
+      width: 30px;
+      height: 30px;
+      bottom: 7px;
+    }
+  }
+
+  @include responsive.max(500px) {
+    h2 {
+      font-size: var(--font-size-2) !important;
     }
   }
 
@@ -398,10 +409,25 @@
     }
   }
 
+  @include responsive.max(900px) {
+    h2 {
+      font-size: var(--font-size-3) !important;
+    }
+
+    .trendUp {
+      margin-left: 9.5rem;
+      width: 30px;
+      height: 30px;
+      bottom: 7px;
+    }
+  }
+
   @include responsive.max(500px) {
     padding-right: 3.5rem !important;
 
-    font-size: var(--font-size-1) !important;
+    h2 {
+      font-size: var(--font-size-2) !important;
+    }
 
     .trendUp {
       display: none;
@@ -415,6 +441,33 @@
   color: var(--color-primary) !important;
 
   position: relative;
+
+  .trendUp {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    margin-left: 0.3rem !important;
+    margin-top: 0.5rem;
+
+    @include responsive.max(1200px) {
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      margin-left: 0.3rem !important;
+      margin-top: 0.2rem;
+    }
+    @include responsive.max(900px) {
+      width: 30px;
+      height: 30px;
+      position: absolute;
+      margin-left: 0.5rem !important;
+      margin-top: 0.5rem;
+    }
+
+    @include responsive.max(500px) {
+      display: none;
+    }
+  }
 }
 
 //Geo

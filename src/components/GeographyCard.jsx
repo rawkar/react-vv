@@ -10,9 +10,9 @@ const GeographyCard = ({ geography }) => {
   return (
     <div className="main__box-card sammanfattning-geo">
       <h6 className="main__box-title">Geografi</h6>
-      <h3 className="main__box-content" id="geo">
+      <div className="main__box-content" id="geo">
         {geographyData}
-      </h3>
+      </div>
       <img src={Map} className="map" alt="map"/>
       <p className="main__box-text">Länder som dina följare kommer ifrån.</p>
     </div>
