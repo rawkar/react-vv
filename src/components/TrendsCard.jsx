@@ -2,7 +2,7 @@ import React from 'react';
 import TrendUp from '../assets/icons/TrendUp';
 
 const TrendsCard = ({ trends }) => {
-  // Antag att `trends` är ett objekt med nycklarna `clicksPercentage` och `viewsPercentage`
+ 
   const clicks = trends?.clicksPercentage || 'Data saknas';
   const views = trends?.viewsPercentage || 'Data saknas';
 

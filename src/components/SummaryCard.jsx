@@ -1,8 +1,7 @@
 import React from 'react';
 
 const SummaryCard = ({ summary }) => {
-  // Anta att `summary` kan vara ett objekt med nycklarna `clicks` och `views`.
-  // Värdena visas direkt utan etiketter.
+
   const clicks = summary?.clicks || 'Data saknas';
   const views = summary?.views || 'Data saknas';
 
